@@ -1,0 +1,17 @@
+import React from "react";
+import { Button } from "@chakra-ui/react";
+
+const DeleteRepoButton = ({ onDelete }) => {
+  const handleDelete = () => {
+    // Call API to delete repository
+    onDelete();
+  };
+
+  return (
+    <Button colorScheme="red" onClick={handleDelete}>
+      Delete Repository
+    </Button>
+  );
+};
+
+export default DeleteRepoButton;
